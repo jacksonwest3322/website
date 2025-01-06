@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popbob.ser</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .question {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-top: 1rem;
+            text-align: center;
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>david b</h1>
+        <p class="question">Is it crystal online?</p>
+    </div>
+    <script>
+        // Customize the experience here if you want dynamic interactions
+        // Example: Change the text dynamically after a few seconds
+
+        setTimeout(() => {
+            document.querySelector('.question').textContent = "Yes, it's crystal clear!";
+        }, 5000); // Changes the text after 5 seconds
+    </script>
+</body>
+</html>
